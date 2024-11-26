@@ -29,7 +29,7 @@ def open_service_factor_setting_window(db, first, last):
         padding_x2 = 5
         padding_y2 = 5
 
-        conn = sqlite3.connect(db)
+        conn = sqlite3.connect(db_name)
         cur = conn.cursor()
         cur.execute('''CREATE TABLE IF NOT EXISTS service_labor_factors (mulch TEXT, soil TEXT, stone TEXT, flagstone TEXT, sixbysixbyeight_footer TEXT, sixbysixbyeight_course TEXT, paver TEXT, ads_4inchpipe TEXT,
                         tilling TEXT, sod_prepped TEXT, sod_unprepped TEXT, sod_prepped_1wide TEXT, sod_prepped_3wide TEXT, sodcutter TEXT,
